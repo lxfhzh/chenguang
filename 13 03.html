@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	document.cookie="b=2";
+	var d=new Date();
+	d.setDate(d.getDate()+1);//当前时间加1天
+	d.setSeconds((d.getSeconds()+5);//当前时间加5s
+	document.cookie="abc=123;
+	expires="+d.toGMTString();
+//document.cookie="bbb=222;
+//expires=2017/11/2";//不支持这样写
+document.cookie="ccc=333;expires=Thu, 02 Nov 2017 07:27:08 GMT";
+var d=new Date("2017/11/2"));
+document.cookie="ddd=444;expires="+d.toGMTString();
+</script>
